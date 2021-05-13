@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,16 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  isClicked = false;
+  @ViewChild('menu') menuElement!: ElementRef;
+
+  @HostListener('window: scroll', ['$event']) 
+  handleScroll() {
+    const windowScroll = window.pageYOffset;
+    if (windowScroll >= this.menuPosition) {
+      this.isSticky = true;
+    }
+    else 
+     {
+       this.isSticky = false;
+     }
+  }
+
+  isSticky:boolean = false;
+  isClicked:boolean = false;
 
   checkIsClicked() {
     this.isClicked = !this.isClicked;
     console.log(this.isClicked);
   }
 
-  constructor() { }
+  menuPosition:any;
+
+  ngAfterViewInit(){
+    this.menuPosition = this.menuElement.nativeElement.offsetTop
+}
+  constructor() {
+
+   }
 
   ngOnInit(): void {
   }
+
 
 }

@@ -6,6 +6,7 @@
         justify-content:space-evenly;
         position: relative; 
         z-index: 50;       
+        opacity: .8;
         background-color: #1B4CA1;
         box-shadow: 5px 5px 10px teal;
        
@@ -248,3 +249,8 @@
 
     //     }
     // }
+
+    .sticky {
+        position: fixed;
+        opacity: 1;
+    }
