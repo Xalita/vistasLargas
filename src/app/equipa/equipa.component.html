@@ -1,0 +1,27 @@
+<div class="card" *ngFor="let item of equipa">
+    <div class="image-holder">
+        <img [src]="item.imgPath" alt="">
+    </div>
+    <div class="details">
+        <div class="nome">
+            <h1>                
+                <em>{{ item.nome }}  </em>              
+            </h1>
+            
+
+        </div>
+        <div class="cargo">
+            <h5>
+                <span class="highlight">
+                    {{ item.cargo }}
+                </span>
+            </h5>
+        </div>
+        <p class="light">
+            <em>
+              <span class="font">"</span> {{ item.description }} <span class="font">"</span>
+            </em>
+    </p>
+        
+    </div>
+</div>

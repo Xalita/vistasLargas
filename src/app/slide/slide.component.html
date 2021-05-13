@@ -1,0 +1,19 @@
+
+    <section class="container">        
+        <img [src]="img[counter].url" [alt]="img[counter].alt">
+
+        <div class="prev-arrow" (click)="goNext()"> 
+            prev
+        </div>
+
+        <div class="next-arrow" (click)="goNext()"> 
+            next
+        </div>
+
+        <div class="circle-container" >
+        <ng-container *ngFor="let item of img">
+                <div class="circle" [ngClass]="{active: item.id === counter}"></div>
+            </ng-container>
+        </div>
+
+</section>

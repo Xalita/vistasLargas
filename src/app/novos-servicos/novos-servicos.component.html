@@ -1,0 +1,24 @@
+<div id="servicos" class="cards">
+  <ng-container *ngFor="let item of categorias" >
+    <div class="card" >
+      <img [src]="item.imgPath" alt="">
+      <div class="text" #servico>
+        {{ item.nome }}   
+      </div>
+      <button class="button" (click)="getServico(servico)">Saber mais</button>
+    </div>
+  </ng-container>
+
+  <ng-container *ngFor="let tipo of tipos">
+    <div class="card" >
+      <div *ngIf="tipo.categoria == servicoAtMom">
+        <img [src]="tipo.img" alt="tipo.nome">       
+      </div>
+    </div>
+  </ng-container>
+
+</div>
+
+
+
+

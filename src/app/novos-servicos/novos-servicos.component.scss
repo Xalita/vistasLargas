@@ -1,0 +1,369 @@
+
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+ 
+    // padding: 100px ;
+    // margin: 300px 100px 300px 100px;
+    position: relative;
+    // background-color: #1B4CA1;
+
+    
+  }
+
+  .card {
+    cursor: pointer;
+    flex: 0 1 500px;
+    margin: 20px;
+    height: 100%;
+    // border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    // background-color: #1B4CA1;
+    transition: all .1s ease-in-out;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border: 0;
+    position: relative;
+
+
+    &:hover {
+      transform: scale(1.1);
+     
+    }
+
+    img {
+
+       width: 100%;
+        object-fit: cover;
+      }
+
+      .text {
+        padding: 20px 20px 20px;
+        background-color: #1B4CA1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        opacity: .9;
+        width: 100%;
+        height: 100%;
+
+
+       
+
+        span {
+            background: #1B4CA1;
+            border-radius: 5px;
+            color: white;
+            padding: 10px;
+            width: 30%;
+            }
+      }
+      .button {
+        position: absolute;
+        z-index: 50;
+        bottom: 0;
+        background-color: #fff;
+        color: #1B4CA1;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+
+        &:hover {
+          background-color: #1B4CA1;
+          color: #fff;
+          opacity: .9;
+
+
+
+        }
+      }
+  } 
+
+  
+  .active {
+    background-color: black;
+    color: #fff;
+  }
+
+
+.none {  
+  display: none;
+  opacity: 0;
+}
+
+  .show-service {
+
+    display: flex;
+    flex-flow: row wrap;
+    order: 4;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #1B4CA1;
+    opacity: 1;
+    transition: all 2s ease-in-out;
+    animation: 
+    show
+    1.5s
+    ease-in-out
+    0s
+    none
+    running;
+
+    @media (max-width:375px) {
+      order: 1;
+    }
+  
+    @keyframes show {
+      0% {
+        opacity: 0;       
+      }
+  
+      100% {
+        opacity: 1;    
+      }
+    }
+
+    .cadio {
+      cursor: pointer;
+      flex: 0 1 300px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      transition: all .1s ease-in-out;
+      outline: 0;
+      border: 0;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+  
+      img {
+  
+          max-width: 100%;
+          object-fit: cover;
+        }
+  
+        .text {
+          padding: 0 20px 20px;
+  
+          span {
+              background: #1B4CA1;
+              border-radius: 5px;
+              color: white;
+              padding: 10px;
+              width: 30%;
+              }
+        }
+  
+    }
+
+
+
+  
+  .animation {
+  
+    animation: 
+    move
+    2s
+    ease-in-out;
+  
+    @keyframes move {
+      from {
+        transform: translateX(0);
+      }
+  
+      to {
+        transform: translateX(200px);
+  
+      }
+    } 
+  }
+  
+  
+  
+  
+  }
+
+
+  .card-2 {
+    cursor: pointer;
+    flex: 0 1 300px;
+    height: 300px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color:#1B4CA1;
+    transition: all .1s ease-in-out;
+    position: inherit;
+    top: -360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    opacity: .8;
+
+
+
+    &:hover {
+      // transform: scale(1.1);
+      z-index: 5;
+    }
+
+    .text {
+      color: white;
+      font-size: 3rem;
+      font-weight: 900;
+      opacity: 1;
+    }
+
+      }
+
+  
+
+
+
+// #vinil-mobile {
+//   display: none;
+
+//   @media (max-width:375px) {
+
+//     #vinil-mobile {
+//       display: block;
+//       .show-service {
+
+//         display: flex;
+//         flex-flow: row wrap;
+//         justify-content: center;
+//         align-items: stretch;
+//         width: 100%;
+//         background: #1B4CA1;
+//         opacity: 1;
+//         transition: all 2s ease-in-out;
+//         animation: 
+//         show
+//         1.5s
+//         ease-in-out
+//         0s
+//         none
+//         running;
+      
+//         @keyframes show {
+//           0% {
+//             opacity: 0;       
+//           }
+      
+//           100% {
+//             opacity: 1;    
+//           }
+//         }
+      
+//         .card {
+          
+//           cursor: pointer;
+//           flex: 0 1 400px;
+//           margin: 10px;
+//           border: 1px solid #ccc;
+//           box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+//           background-color: #fff;
+//           transition: all .1s ease-in-out;
+      
+//           animation: 
+//           stretch
+//           1.5s
+//           ease-out
+//           0s
+              
+//           none
+//           running;
+      
+//           &:hover {
+//             transform: scale(1.1);
+//           }
+      
+//           @keyframes stretch {
+//             0% {
+//               transform: scale(.8);        
+//               border-radius: 20%;
+//             }
+       
+//             100% {
+//               transform: scale(1);
+            
+//             }
+//           }
+      
+//           // .card-img {        
+//           //     height: 300px;
+//           // }
+//           img {
+      
+//               max-height: 100%;
+//               object-fit: cover;
+//             }
+      
+//             .text {
+//               padding: 0 20px 20px;
+              
+      
+//               span {
+//                   background: #1B4CA1;
+//                   border-radius: 5px;
+//                   color: white;
+//                   padding: 10px;
+//                   width: 30%;
+//                   }
+//             }
+      
+//         } 
+//       }
+//     }
+//   }
+// }
+
+
+.one {
+  order:1;
+}
+
+.two {
+  order:2;
+}
+
+.three {
+  order: 3;
+}
+
+
+.five {
+  order:5
+}
+
+.six {
+  order:6;
+}
+
+.seven {
+  order:7;
+}
