@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   @HostListener('window: scroll', ['$event']) 
   handleScroll() {
     const windowScroll = window.pageYOffset;
-    if (windowScroll >= this.menuPosition) {
+    if (windowScroll > this.menuPosition) {
       this.isSticky = true;
     }
     else 
@@ -32,7 +32,8 @@ export class NavbarComponent implements OnInit {
   menuPosition:any;
 
   ngAfterViewInit(){
-    this.menuPosition = this.menuElement.nativeElement.offsetTop
+    const offTop = this.menuElement.nativeElement.offsetTop;
+    this.menuPosition = offTop;
 }
   constructor() {
 
