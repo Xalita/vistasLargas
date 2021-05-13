@@ -18,6 +18,7 @@ export class SlideComponent implements OnInit {
 
     goNext() {
       this.counter++;
+      console.log (this.counter);
       if (this.counter > this.img.length-1) {
         this.counter = 0;
       }
