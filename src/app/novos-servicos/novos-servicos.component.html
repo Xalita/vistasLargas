@@ -1,21 +1,21 @@
 <div id="servicos" class="cards">
-  <ng-container *ngFor="let item of categorias" >
+  <ng-container *ngFor="let categoria of categorias" >
     <div class="card" >
-      <img [src]="item.imgPath" alt="">
+      <img [src]="categoria.imgPath" alt="categoria.nome">
       <div class="text" #servico>
-        {{ item.nome }}   
+        {{ categoria.nome }}   
       </div>
       <button class="button" (click)="getServico(servico)">Saber mais</button>
     </div>
   </ng-container>
 
-  <ng-container *ngFor="let tipo of tipos">
-    <div class="card" >
-      <div *ngIf="tipo.categoria == servicoAtMom">
+  <div class="card" >
+      <ng-container>
+      <div *ngFor="let tipo of tipos">
         <img [src]="tipo.img" alt="tipo.nome">       
       </div>
+    </ng-container>
     </div>
-  </ng-container>
 
 </div>
 
