@@ -5,7 +5,7 @@
         align-items: center;
         justify-content:space-evenly;
         position: relative; 
-        z-index: 300;       
+        z-index: 2;       
         background-color:rgba($color: #1B4CA1, $alpha:1) ;
         box-shadow: 5px 5px 10px #888888;
        
@@ -25,18 +25,6 @@
                 position: absolute;
                 right: 20px;
                 
-               @media (max-width:768px){
-                .hamburguer {   
-                width: 200px;
-                height: 30%;                    
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: space-evenly;
-                align-items: center;
-                position: absolute;
-                right: 20px;
-                }
-               } 
         
                 .line {
                     width: 70%;
@@ -48,9 +36,7 @@
         
             .menu2 {
                 display: none;
-                position: absolute;
-                top: 150px;
-                z-index: 10;
+
             }
         
             .block {
@@ -131,8 +117,7 @@
     
             li {
                 
-                list-style: none;
-                padding: 20px;
+                list-style: none;         
                 
 
                 a {
@@ -140,11 +125,11 @@
                     font-size: 1.5rem;
                     font-weight: 400;
                     color: #fff;
+                    padding: 40px 20px 40px 20px;
 
                     &:hover {
-                        border-bottom: 5px solid #fff;
-                        border-radius: 10%;
-                        color: #fff;
+                        color: #1B4CA1;
+                        background-color: #fff;
                     }
 
                 }
@@ -157,6 +142,27 @@
         .hamburguer {
             display: none;
 
+            @media (max-width:375px) {
+                width: 60px;
+                height: 30%;                    
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                position: absolute;
+                right: 20px;
+            }
+
+            @media (max-width:768px) {
+                width: 200px;
+                height: 30%;                    
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+
             .line {
                 width: 70%;
                 height: auto;
@@ -168,7 +174,7 @@
                 display: none;
                 position: absolute;
                 top: 150px;
-                z-index: 10;
+                z-index: 30;
             }
         
             .block {
@@ -197,27 +203,7 @@
             }
     
 
-            @media (max-width:375px) {
-       
-                    width: 60px;
-                    height: 30%;                    
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    position: absolute;
-                    right: 20px;
-            }
-            @media (max-width:768px) {
-                width: 60px;
-                height: 30%;                    
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: space-evenly;
-                align-items: center;
-                position: absolute;
-                right: 20px;
-            }
+
 
         }
 
@@ -260,8 +246,8 @@
         align-items: center;
         justify-content:space-evenly;
 
-        z-index: 300;       
-        background-color:rgba($color: #1B4CA1, $alpha: 1) ;
+        z-index: 20;       
+        background-color:rgba($color: #1B4CA1, $alpha: .8);
 
         box-shadow: 2px 2px 10px teal;
 
@@ -275,7 +261,12 @@
                 width: 50%;
                 display: flex;
                 align-items: center;        
-                z-index: 50;                   
+                z-index: 50;   
+                
+                img {
+                    max-width: 50%;
+                    object-fit: cover;
+                }                
 
             }
 
@@ -284,12 +275,12 @@
                     width: 50%;
                     display: flex;
                     align-items: center;
-                    margin-left: 50px;
+                    margin-left: 0px;
                     position: absolute;
                     z-index: 50;
 
                         img {
-                            width: 100%;
+                            max-width: 80%;
                             object-fit: cover;
                         }
                 }
@@ -299,5 +290,7 @@
                 object-fit: cover;
             }
         }
+
+
         
     }
