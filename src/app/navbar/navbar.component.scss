@@ -139,11 +139,42 @@
             }            
         }
         
+        .menu2 {
+            display: none;
+            position: absolute;
+            top: 150px;
+            z-index: 30;
+        }
+
+        .block {
+            display: block;
+            width: 100%;
+            
+    
+            a{
+                text-align: center;
+                text-decoration: none;
+                background-color: rgba(27, 76, 161, 1);
+                color: #fff;
+                font-weight: 400;
+                display: block;
+                padding: 20px;
+                border-bottom: 1px solid grey;
+                transition: all 1s ease-out;
+    
+                &:hover {
+                    background-color: rgba(9, 45, 107,.8);
+                    color: white;
+        
+                }
+    
+            }
+        }
         .hamburguer {
             display: none;
 
             @media (max-width:375px) {
-                width: 60px;
+                width: 40px;
                 height: 30%;                    
                 display: flex;
                 flex-flow: column wrap;
@@ -154,7 +185,7 @@
             }
 
             @media (max-width:768px) {
-                width: 200px;
+                width: 60px;
                 height: 30%;                    
                 display: flex;
                 flex-flow: column wrap;
