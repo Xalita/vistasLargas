@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { BackgroundComponent } from './background/background.component';
 import { SlideComponent } from './slide/slide.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { ServicosComponent } from './servicos/servicos.component';
@@ -18,7 +17,6 @@ import { PortfolioComponent } from './novos-servicos/portfolio/portfolio.compone
   declarations: [
     AppComponent,
     NavbarComponent,
-    BackgroundComponent,
     SlideComponent,
     RodapeComponent,
     ServicosComponent,

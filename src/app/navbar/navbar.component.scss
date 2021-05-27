@@ -4,46 +4,46 @@
         display: flex;
         align-items: center;
         justify-content:space-evenly;
-        position: relative; 
-        z-index: 2;       
+        position: relative;
+        z-index: 2;
         background-color:rgba($color: #1B4CA1, $alpha:1) ;
         box-shadow: 5px 5px 10px #888888;
-       
- 
+
+
 
         @media (max-width:375px) {
 
-            justify-content:flex-start;    
+            justify-content:flex-start;
 
-            .hamburguer {        
+            .hamburguer {
                 width: 60px;
-                height: 30%;                    
+                height: 30%;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: space-evenly;
                 align-items: center;
                 position: absolute;
                 right: 20px;
-                
-        
+
+
                 .line {
                     width: 70%;
                     height: auto;
-                    border-bottom: 3px solid #fff;                    
-                }       
-        
-            }          
-        
+                    border-bottom: 3px solid #fff;
+                }
+
+            }
+
             .menu2 {
                 display: none;
 
             }
-        
+
             .block {
                 display: block;
                 width: 100%;
-                
-        
+
+
                 a{
                     text-align: center;
                     text-decoration: none;
@@ -54,13 +54,13 @@
                     padding: 20px;
                     border-bottom: 1px solid grey;
                     transition: all 1s ease-out;
-        
+
                     &:hover {
                         background-color: rgba(9, 45, 107,.8);
                         color: white;
-            
+
                     }
-        
+
                 }
             }
         }
@@ -74,8 +74,8 @@
                 @media (max-width:768px) {
                     width: 50%;
                     display: flex;
-                    align-items: center;        
-                    z-index: 50;                   
+                    align-items: center;
+                    z-index: 50;
 
                 }
 
@@ -99,26 +99,26 @@
                     object-fit: cover;
                 }
             }
-        
+
         ul {
             display: flex;
             flex-flow: row;
             justify-content: center;
-            margin-right: 20px; 
+            margin-right: 20px;
 
             @media (max-width:375px) {
-                
+
                 display: none;
             }
 
             @media (max-width:768px) {
                 display: none;
             }
-    
+
             li {
-                
-                list-style: none;         
-                
+
+                list-style: none;
+
 
                 a {
                     text-decoration: none;
@@ -134,11 +134,11 @@
 
                 }
 
-               
-    
-            }            
+
+
+            }
         }
-        
+
         .menu2 {
             display: none;
             position: absolute;
@@ -149,8 +149,9 @@
         .block {
             display: block;
             width: 100%;
-            
-    
+
+
+
             a{
                 text-align: center;
                 text-decoration: none;
@@ -161,13 +162,13 @@
                 padding: 20px;
                 border-bottom: 1px solid grey;
                 transition: all 1s ease-out;
-    
+
                 &:hover {
                     background-color: rgba(9, 45, 107,.8);
                     color: white;
-        
+
                 }
-    
+
             }
         }
         .hamburguer {
@@ -175,7 +176,7 @@
 
             @media (max-width:375px) {
                 width: 40px;
-                height: 30%;                    
+                height: 30%;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: space-evenly;
@@ -186,7 +187,7 @@
 
             @media (max-width:768px) {
                 width: 60px;
-                height: 30%;                    
+                height: 30%;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: space-evenly;
@@ -198,21 +199,23 @@
                 width: 70%;
                 height: auto;
                 border-bottom: 3px solid #fff;
-                
+
             }
-            
+
             .menu2 {
                 display: none;
                 position: absolute;
-                top: 150px;
+                top: -500px;
                 z-index: 30;
             }
-        
+
             .block {
                 display: block;
                 width: 100%;
-                
-        
+
+
+
+
                 a{
                     text-align: center;
                     text-decoration: none;
@@ -223,16 +226,16 @@
                     padding: 20px;
                     border-bottom: 1px solid grey;
                     transition: all 1s ease-out;
-        
+
                     &:hover {
                         background-color: rgba(9, 45, 107,.8);
                         color: white;
-            
+
                     }
-        
+
                 }
             }
-    
+
 
 
 
@@ -245,7 +248,7 @@
     // .hamburguer:hover + .menu2{
     //     display: block;
     //     width: 100%;
-        
+
 
     //     a{
     //         text-decoration: none;
@@ -260,7 +263,7 @@
     //         &:hover {
     //             background-color: rgba(27, 76, 161, 1);
     //             color: white;
-    
+
     //         }
 
     //     }
@@ -269,7 +272,7 @@
     .sticky {
         position: fixed;
         top: 0;
-        overflow: hidden;
+        // overflow: hidden;
 
         width: 100%;
         height: 100px;
@@ -277,10 +280,12 @@
         align-items: center;
         justify-content:space-evenly;
 
-        z-index: 20;       
+        z-index: 20;
         background-color:rgba($color: #1B4CA1, $alpha: .8);
 
         box-shadow: 2px 2px 10px teal;
+
+
 
         .logo {
             width: 8%;
@@ -291,13 +296,13 @@
             @media (max-width:768px) {
                 width: 50%;
                 display: flex;
-                align-items: center;        
-                z-index: 50;   
-                
+                align-items: center;
+                z-index: 50;
+
                 img {
                     max-width: 50%;
                     object-fit: cover;
-                }                
+                }
 
             }
 
@@ -323,5 +328,5 @@
         }
 
 
-        
+
     }
