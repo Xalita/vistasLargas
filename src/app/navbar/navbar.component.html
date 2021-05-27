@@ -3,9 +3,9 @@
           <a href="">
             <img src="../../assets/img/logo_White.svg" alt="">
           </a>
-        </div> 
-               
-          <ul>            
+        </div>
+
+          <ul>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#form">Orçamentos</a></li>
             <li><a href="#equipa">A equipa</a></li>
@@ -15,14 +15,14 @@
           <div (click)="checkIsClicked()" class="hamburguer">
             <div class="line"></div>
             <div class="line"></div>
-            <div class="line"></div>            
+            <div class="line"></div>
           </div>
-           
-          <div class="menu2" [class.block]="isClicked">              
+
+          <div class="menu2" #menu2 [class.block]="isClicked">
             <a href="#">Serviços</a>
             <a href="#form">Orçamentos</a>
-            <a href="#contactos">Contactos</a>            
+            <a href="#contactos">Contactos</a>
         </div>
-          
+
       </nav>
 

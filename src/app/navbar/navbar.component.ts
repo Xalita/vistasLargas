@@ -6,34 +6,56 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  menuPosition: any;
+  menuPosition2: any;
+  isSticky = false;
+  isSticky2 = false;
+  isClicked = false;
 
   @ViewChild('menu') menuElement!: ElementRef;
+  @ViewChild ('menu2') menu2!: ElementRef;
 
-  @HostListener('window: scroll', ['$event']) 
-  handleScroll() {
+  @HostListener('window: scroll', ['$event'])
+  handleScroll(): void {
     const windowScroll = window.pageYOffset;
     if (windowScroll > this.menuPosition) {
       this.isSticky = true;
+      this.menuPosition2 = this.menuPosition;
     }
-    else 
+    else
      {
        this.isSticky = false;
      }
   }
 
-  isSticky:boolean = false;
-  isClicked:boolean = false;
 
-  checkIsClicked() {
+
+  // @HostListener('window: scroll', ['$event'])
+  // handleStuff(e: any): void {
+  //   const topPos = window.pageYOffset;
+  //   const navBar = document.getElementsByClassName ('menu2');
+  //   if (topPos > this.menuPosition2) {
+  //     navBar.classList.add ('sticky2');
+  //   } else
+  //   {
+  //     navBar.classList.add ('sticky2');
+
+  //   }
+  // }
+
+
+
+  checkIsClicked(): void {
     this.isClicked = !this.isClicked;
     console.log(this.isClicked);
   }
 
-  menuPosition:any;
+
 
   ngAfterViewInit(){
     const offTop = this.menuElement.nativeElement.offsetTop;
     this.menuPosition = offTop;
+    this.menuPosition2 = this.menuPosition + 100;
 }
   constructor() {
 
