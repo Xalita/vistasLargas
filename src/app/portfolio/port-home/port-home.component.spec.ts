@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VinilComponent } from './vinil.component';
+import { PortHomeComponent } from './port-home.component';
 
-describe('VinilComponent', () => {
-  let component: VinilComponent;
-  let fixture: ComponentFixture<VinilComponent>;
+describe('PortHomeComponent', () => {
+  let component: PortHomeComponent;
+  let fixture: ComponentFixture<PortHomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VinilComponent ]
+      declarations: [ PortHomeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VinilComponent);
+    fixture = TestBed.createComponent(PortHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,10 @@
+<div class="container">
+  <ng-container *ngFor="let item of portfolio">
+    <div class="card" (mouseenter)="showHiddenDiv()">
+      <img [src]="item.sourcePath" *ngIf="!changeVisibilty" alt="">
+      <div class="text" *ngIf="changeVisibilty">cosiso</div>
+    </div>
+  </ng-container>
+
+
+</div>

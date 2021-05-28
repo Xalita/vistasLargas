@@ -1,10 +1,10 @@
-import { VinilComponent } from './vinil/vinil.component';
+import { PortHomeComponent } from './port-home/port-home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  {path: 'servicos', component: VinilComponent}
+  {path: 'servicos', component: PortHomeComponent}
 ];
 
 @NgModule({
