@@ -3,18 +3,20 @@
     <div class="card" >
       <img [src]="categoria.imgPath" alt="categoria.nome">
       <div class="text" #servico>
-        {{ categoria.nome }}   
+        {{ categoria.nome }}
       </div>
-      <button class="button" (click)="getServico(servico)">Saber mais</button>
+      <button class="button" (click)="getServico(servico)">
+        <a routerLink="/servicos" >Saber mais</a>
+      </button>
     </div>
   </ng-container>
 
   <div class="card" >
-      <ng-container>
+
       <div *ngFor="let tipo of tipos">
-        <img [src]="tipo.img" alt="tipo.nome">       
+        <img [src]="tipo.img" alt="tipo.nome">
       </div>
-    </ng-container>
+
     </div>
 
 </div>

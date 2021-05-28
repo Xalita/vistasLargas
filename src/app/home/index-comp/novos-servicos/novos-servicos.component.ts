@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import {servicos} from "./mock-servicos";
-import { cat } from "./mock-categorias";
+import {servicos} from './mock-servicos';
+import { cat } from './mock-categorias';
 
 @Component({
   selector: 'app-novos-servicos',
@@ -14,19 +14,21 @@ export class NovosServicosComponent implements OnInit {
 
   tipos = servicos;
 
-  categorias:any = cat;
+  categorias: any = cat;
 
-  isSameServico= false;
+  isSameServico = false;
 
-  servicoAtMom="";
+  servicoAtMom = '';
 
-  getServico(e:any) {  
+  getServico(e: any): void {
     this.servicoAtMom = e.innerHTML;
     console.log (e.innerHTML);
     console.log (this.servicoAtMom);
   }
 
-  checkServicos(value:any){
+
+
+  checkServicos(value: any): void{
     if (value === this.servicoAtMom) {
       this.isSameServico = true;
     }

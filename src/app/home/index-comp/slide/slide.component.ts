@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SLIDE } from "../mock-slide";
+import { SLIDE } from './mock-slide';
 
 @Component({
   selector: 'app-slide',
@@ -9,35 +9,28 @@ import { SLIDE } from "../mock-slide";
 export class SlideComponent implements OnInit {
 
   img = SLIDE;
-  
-  counter: number = 0;
 
-    test () {
-      console.log (this.img[0].url)
-    }
+  counter = 0;
 
-    goNext() {
+    goNext(): void {
       this.counter++;
       console.log (this.counter);
-      if (this.counter > this.img.length-1) {
+      if (this.counter > this.img.length - 1) {
         this.counter = 0;
       }
     }
 
-    print() {
-      console.log ("stuff");
-    }
 
-    goPrev() {
+    goPrev(): void {
       this.counter--;
       if (this.counter < 0) {
-        this.counter = this.img.length-1;
+        this.counter = this.img.length - 1;
       }
     }
   constructor() { }
 
   ngOnInit(): void {
-    
+
 
   }
 

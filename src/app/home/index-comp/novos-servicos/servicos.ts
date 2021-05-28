@@ -1,6 +1,6 @@
 export interface LISTA {
     id: number;
-    nome: String;
+    nome: string;
     desc: string;
     img: string;
     categoria: string;
