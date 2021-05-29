@@ -1,0 +1,22 @@
+.wrap-menu {
+  position: absolute;
+  z-index: 10;
+  width: 10%;
+
+  padding: 20px;
+  background-color: rosybrown;
+  display: flex;
+  flex-flow: column;
+
+  .item {
+    padding: 20px;
+
+      &:hover {
+        transform: scale(1);
+        transition: transform 0.5s ease-out;
+        color: thistle;
+
+      }
+
+  }
+}

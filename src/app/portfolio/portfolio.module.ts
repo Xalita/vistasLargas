@@ -8,10 +8,10 @@ import { PortHomeComponent } from './port-home/port-home.component';
 @NgModule({
   declarations: [
     PortHomeComponent
-  ],
+    ],
   imports: [
     CommonModule,
     PortfolioRoutingModule
-  ]
+    ]
 })
 export class PortfolioModule { }

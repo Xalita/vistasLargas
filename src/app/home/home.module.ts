@@ -1,4 +1,3 @@
-import { ContactosComponent } from './index-comp/contactos/contactos.component';
 import { RodapeComponent } from './index-comp/rodape/rodape.component';
 import { EquipaComponent } from './index-comp/equipa/equipa.component';
 import { FormComponent } from './index-comp/form/form.component';
@@ -19,11 +18,10 @@ import { IndexCompComponent } from './index-comp/index-comp.component';
     FormComponent,
     EquipaComponent,
     RodapeComponent,
-    ContactosComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-  ]
+  ],
 })
 export class HomeModule { }

@@ -1,14 +1,13 @@
-import { PortHomeComponent } from './port-home/port-home.component';
+import { ContatosHomeComponent } from './contatos-home/contatos-home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
 const routes: Routes = [
-  {path: '', component: PortHomeComponent}
+  {path: '', component: ContatosHomeComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PortfolioRoutingModule { }
+export class ContatosRoutingModule { }
