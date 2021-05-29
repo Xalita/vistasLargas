@@ -9,6 +9,16 @@ export const port: PORTFOLIO[] = [
    {
      id: 1,
      nome: 'espelhado',
-     sourcePath: './../assets/Portfolio/carlos-gil-_ywX9cLcap4-unsplash.jpg'
+     sourcePath: './../../../assets/Portfolio/cody-weiss-hEMYwIE6GEY-unsplash.jpg'
+   },
+   {
+     id: 2,
+     nome: 'Laser',
+     sourcePath: './../../../assets/Portfolio/surface-5PBV0QssNfA-unsplash.jpg'
+   },
+   {
+     id: 3,
+     nome: 'Decoração viaturas',
+     sourcePath: './../../../assets/Portfolio/surface-9iDizfMiiaA-unsplash.jpg'
    }
 ];

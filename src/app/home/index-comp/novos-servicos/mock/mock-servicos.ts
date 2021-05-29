@@ -1,4 +1,4 @@
-import {LISTA} from "./servicos";
+import {LISTA} from '../models/servicos';
 
 export const servicos: LISTA[] = [
     {

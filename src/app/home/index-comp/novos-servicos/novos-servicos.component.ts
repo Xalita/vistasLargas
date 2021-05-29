@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import {servicos} from './mock-servicos';
-import { cat } from './mock-categorias';
+import {servicos} from './mock/mock-servicos';
+import { cat } from './/mock/mock-categorias';
 
 @Component({
   selector: 'app-novos-servicos',
