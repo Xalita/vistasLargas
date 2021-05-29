@@ -3,8 +3,8 @@
         height: 800px;
         // background-color: rosybrown;
         position: relative;
-      
-       
+
+
         display: flex;
         justify-content: center;
 
@@ -12,7 +12,7 @@
             display: none;
         }
 
-    
+
 
 
 
@@ -33,7 +33,7 @@
     justify-content: center;
     position: absolute;
     left: 0;
-    
+
 
 }
 
@@ -50,11 +50,11 @@
 
 }
 
-.circle-container {    
+.circle-container {
     position: absolute;
     display: flex;
     bottom: 40px;
-    z-index: 50;
+    z-index: 4;
 
 
     .circle {

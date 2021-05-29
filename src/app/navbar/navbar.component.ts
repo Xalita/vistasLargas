@@ -6,6 +6,7 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+
   menuPosition: any;
   menuPosition2: any;
   isSticky = false;
@@ -52,14 +53,7 @@ export class NavbarComponent implements OnInit {
 
 
 
-  ngAfterViewInit(){
-    const offTop = this.menuElement.nativeElement.offsetTop;
-    this.menuPosition = offTop;
-    this.menu2.nativeElement.offsetTop = this.menuPosition + 100;
 
-
-
-}
   constructor() {
 
    }
@@ -67,5 +61,10 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngAfterViewInit(): void{
+    const offTop = this.menuElement.nativeElement.offsetTop;
+    this.menuPosition = offTop;
+    this.menu2.nativeElement.offsetTop = this.menuPosition + 100;
+}
 
 }

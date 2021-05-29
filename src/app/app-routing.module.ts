@@ -1,4 +1,3 @@
-import { IndexCompComponent } from './home/index-comp/index-comp.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

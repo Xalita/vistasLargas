@@ -1,4 +1,4 @@
-import { RodapeComponent } from './index-comp/rodape/rodape.component';
+import { SharedModule } from './../shared/shared.module';
 import { EquipaComponent } from './index-comp/equipa/equipa.component';
 import { FormComponent } from './index-comp/form/form.component';
 import { NovosServicosComponent } from './index-comp/novos-servicos/novos-servicos.component';
@@ -16,12 +16,12 @@ import { IndexCompComponent } from './index-comp/index-comp.component';
     SlideComponent,
     NovosServicosComponent,
     FormComponent,
-    EquipaComponent,
-    RodapeComponent,
+    EquipaComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
+    SharedModule
   ],
 })
 export class HomeModule { }
