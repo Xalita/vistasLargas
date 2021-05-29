@@ -14,6 +14,7 @@ export class PortHomeComponent implements OnInit {
 
   showHiddenDiv(): void {
     this.changeVisibilty = !this.changeVisibilty;
+    console.log (this.changeVisibilty);
   }
 
   constructor() { }
