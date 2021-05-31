@@ -31,18 +31,7 @@ export class NavbarComponent implements OnInit {
 
 
 
-  // @HostListener('window: scroll', ['$event'])
-  // handleStuff(e: any): void {
-  //   const topPos = window.pageYOffset;
-  //   const navBar = document.getElementsByClassName ('menu2');
-  //   if (topPos > this.menuPosition2) {
-  //     navBar.classList.add ('sticky2');
-  //   } else
-  //   {
-  //     navBar.classList.add ('sticky2');
 
-  //   }
-  // }
 
 
 
