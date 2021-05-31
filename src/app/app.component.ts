@@ -17,7 +17,7 @@ ngOnInit(): void {
 }
 
 private initFacebookService(): void {
-      const initParams: InitParams = { xfbml: true, version: 'v3.2'};
+      const initParams: InitParams = { appId: '139634199535421', xfbml: true, version: 'v3.2'};
       this.facebookService.init(initParams);
 }
 

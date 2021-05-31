@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { FacebookService, InitParams } from 'ngx-facebook';
+
 @Component({
   selector: 'app-facebook',
   templateUrl: './facebook.component.html',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FacebookComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor() {
+
+
+   }
+
+
+
 
   ngOnInit(): void {
   }
