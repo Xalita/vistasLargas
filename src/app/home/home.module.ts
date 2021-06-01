@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { IndexCompComponent } from './index-comp/index-comp.component';
+import { ParceirosComponent } from './index-comp/parceiros/parceiros.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { IndexCompComponent } from './index-comp/index-comp.component';
     SlideComponent,
     NovosServicosComponent,
     FormComponent,
-    EquipaComponent
+    EquipaComponent,
+    ParceirosComponent
   ],
   imports: [
     CommonModule,

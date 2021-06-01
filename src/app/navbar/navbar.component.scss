@@ -315,7 +315,7 @@
             display: flex;
             align-items: center;
             margin-left: 50px;
-            filter: invert(2);
+            filter: invert(0);
 
             @media (max-width:768px) {
                 width: 50%;

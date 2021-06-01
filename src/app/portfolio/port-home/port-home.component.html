@@ -1,14 +1,18 @@
 <div class="container">
   <ng-container *ngFor="let item of portfolio">
-    <div class="card" (mouseover)="changeVisibilty = true" (mouseout)="changeVisibilty=false">
-      <img [src]="item.sourcePath" *ngIf="!changeVisibilty" alt="">
-      <div class="text" *ngIf=" changeVisibilty">
+    <div class="card" #foto >
+      <img [src]="item.sourcePath" alt="">
+    </div>
+  </ng-container>
+  <ng-container *ngFor="let item of portfolio">
 
-        {{ item.nome | uppercase}}
+    <div class="text" #descricao  *ngIf=" !changeVisibilty">
 
-      </div>
+      {{ item.nome | uppercase}}
+
     </div>
   </ng-container>
 </div>
+
 
 <app-footer></app-footer>

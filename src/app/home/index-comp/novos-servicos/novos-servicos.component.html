@@ -1,6 +1,6 @@
 <div id="servicos" class="cards">
-  <ng-container *ngFor="let categoria of categorias" >
-    <div class="card" >
+
+    <div class="card" *ngFor="let categoria of categorias" >
       <img [src]="categoria.imgPath" alt="categoria.nome">
       <div class="text" #servico>
         {{ categoria.nome }}
@@ -9,10 +9,6 @@
         <a routerLink="/servicos" >Saber mais</a>
       </button>
     </div>
-  </ng-container>
-
-
-
 </div>
 
 

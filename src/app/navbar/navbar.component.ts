@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
   menuPosition2: any;
   isSticky = false;
   isSticky2 = false;
+
   isClicked = false;
 
   @ViewChild('menu') menuElement!: ElementRef;
