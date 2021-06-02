@@ -68,7 +68,7 @@ onHover(): void {
   ngAfterViewInit(): void{
     const offTop = this.menuElement.nativeElement.offsetTop;
     this.menuPosition = offTop;
-    this.menu2.nativeElement.offsetTop = this.menuPosition + 100;
+    this.menu2.nativeElement.offsetTop = this.menuPosition + 200;
 }
 
 }

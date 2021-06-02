@@ -13,9 +13,8 @@
           </ul>
 
           <div class="hamburguer" #hamburguer (click)="checkIsClicked()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="line" *appLines="3" #line></div>
+
           </div>
 
           <div class="menu2" #menu2 [class.block]="isClicked">
