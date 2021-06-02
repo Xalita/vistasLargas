@@ -1,4 +1,5 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { ThrowStmt } from '@angular/compiler';
+import { Component, ElementRef, HostListener, OnInit, ViewChild, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -44,7 +45,6 @@ export class NavbarComponent implements OnInit {
   }
 
 
-
 onHover(): void {
   this.hover = !this.hover;
 }
@@ -59,7 +59,7 @@ onHover(): void {
 
 
 
-  constructor() {
+  constructor(private render: Renderer2) {
     document.addEventListener('click', this.offHandler.bind(this));
    }
 
