@@ -13,9 +13,21 @@ export class NavbarComponent implements OnInit {
   isSticky2 = false;
 
   isClicked = false;
+  counter = 0;
+  hover = false;
 
   @ViewChild('menu') menuElement!: ElementRef;
   @ViewChild ('menu2') menu2!: ElementRef;
+  @ViewChild ('hamburguer') hamburguerEle!: ElementRef;
+
+
+  offHandler(event: any): any {
+    if (!this.hamburguerEle.nativeElement.contains(event.target)) { // Verifica posição do cursor
+      this.menu2.nativeElement.classList.remove('block');
+    }
+  }
+
+
 
   @HostListener('window: scroll', ['$event'])
   handleScroll(): void {
@@ -32,7 +44,9 @@ export class NavbarComponent implements OnInit {
 
 
 
-
+onHover(): void {
+  this.hover = !this.hover;
+}
 
 
 
@@ -45,7 +59,7 @@ export class NavbarComponent implements OnInit {
 
 
   constructor() {
-
+    document.addEventListener('click', this.offHandler.bind(this));
    }
 
   ngOnInit(): void {

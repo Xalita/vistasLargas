@@ -12,16 +12,16 @@
             <li><a routerLink="/contatos" routerLinkActive="active">Contactos</a></li>
           </ul>
 
-          <div (click)="checkIsClicked()" class="hamburguer">
+          <div class="hamburguer" #hamburguer (click)="checkIsClicked()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
           </div>
 
           <div class="menu2" #menu2 [class.block]="isClicked">
-            <a routerLink="/servicos" routerLinkActive="active">Serviços</a>
+            <a routerLink="/servicos">Serviços</a>
             <a href="#form">Orçamentos</a>
-            <a href="/contatos">Contactos</a>
+            <a routerLink="/contatos">Contactos</a>
         </div>
 
       </nav>

@@ -121,8 +121,8 @@
         .menu2 {
             display: none;
             position: absolute;
-            top: 120px;
-            z-index: 30;
+            top: 100px;
+            z-index: 900;
         }
 
         .block {
@@ -160,6 +160,8 @@
                 align-items: center;
                 position: absolute;
                 right: 20px;
+
+
             }
 
             @media (max-width:768px) {
@@ -169,6 +171,10 @@
                 flex-flow: column wrap;
                 justify-content: space-evenly;
                 align-items: center;
+
+                &:hover .menu2 {
+                  display: block;
+                }
             }
 
 
