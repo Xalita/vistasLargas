@@ -19,6 +19,7 @@ export class NavbarComponent implements OnInit {
   @ViewChild('menu') menuElement!: ElementRef;
   @ViewChild ('menu2') menu2!: ElementRef;
   @ViewChild ('hamburguer') hamburguerEle!: ElementRef;
+  @ViewChild ('line') lineElem!: ElementRef;
 
 
   offHandler(event: any): any {
