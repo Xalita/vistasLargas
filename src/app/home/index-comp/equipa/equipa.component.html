@@ -1,27 +1,40 @@
-<div class="card" *ngFor="let item of equipa">
-    <div class="image-holder">
-        <img [src]="item.imgPath" alt="">
-    </div>
-    <div class="details">
-        <div class="nome">
-            <h1>                
-                <em>{{ item.nome }}  </em>              
-            </h1>
-            
+<div class="carrousel">
+  <div class="container">
+    <ng-container *ngFor="let item of equipa">
+      <div class="card" #{{item}} >
+          <div class="image-holder">
+              <img [src]="item.imgPath" alt="">
+          </div>
+          <div class="details">
+              <div class="nome">
+                  <h1>
+                      <em>{{ item.nome }}  </em>
+                  </h1>
 
-        </div>
-        <div class="cargo">
-            <h5>
-                <span class="highlight">
-                    {{ item.cargo }}
-                </span>
-            </h5>
-        </div>
-        <p class="light">
-            <em>
-              <span class="font">"</span> {{ item.description }} <span class="font">"</span>
-            </em>
-    </p>
-        
-    </div>
+
+              </div>
+              <div class="cargo">
+                  <h5>
+                      <span class="highlight">
+                          {{ item.cargo }}
+                      </span>
+                  </h5>
+              </div>
+              <p class="light">
+                  <em>
+                    <span class="font">"</span> {{ item.description }} <span class="font">"</span>
+                  </em>
+          </p>
+
+          </div>
+      </div>
+    </ng-container>
+  </div>
+
 </div>
+  <!-- <div class="prev">
+    <img src="../../../../assets/equipa/left-arrow.png" alt="">
+  </div>
+  <div class="prev">
+    <img src="../../../../assets/equipa/right-arrow.png" alt="">
+  </div> -->

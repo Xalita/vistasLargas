@@ -9,7 +9,7 @@ import { TEAM } from './db_equipa';
 })
 export class EquipaComponent implements OnInit {
 
-  equipa= TEAM;
+  equipa = TEAM;
 
 
 
