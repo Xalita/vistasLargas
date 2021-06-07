@@ -1,7 +1,7 @@
 <div class="carrousel">
   <div class="container">
     <ng-container *ngFor="let item of equipa">
-      <div class="card" #{{item}} >
+      <div class="card" #{{item}} *ngIf="currentSlide === item.id" >
           <div class="image-holder">
               <img [src]="item.imgPath" alt="">
           </div>
@@ -30,8 +30,9 @@
       </div>
     </ng-container>
   </div>
-
 </div>
+
+<div class="next" (click)="next()">Next</div>
   <!-- <div class="prev">
     <img src="../../../../assets/equipa/left-arrow.png" alt="">
   </div>

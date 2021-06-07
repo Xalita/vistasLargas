@@ -1,6 +1,6 @@
 .carrousel {
 
-    width: 100%;
+    width: 300px;
     margin-top: 50px;
     padding: 20px;
     overflow: hidden;
@@ -10,11 +10,11 @@
       display: flex;
       flex-flow: row wrap;
       align-items: center;
-      width: 900%;
+      width: 6000px;
       overflow: hidden;
 
       .card {
-          flex: 0 1 500px;
+          flex: 0 1 200px;
           height: 40%;
           display: flex;
           flex-flow: column wrap;

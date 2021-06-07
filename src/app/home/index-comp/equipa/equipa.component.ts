@@ -10,8 +10,16 @@ import { TEAM } from './db_equipa';
 export class EquipaComponent implements OnInit {
 
   equipa = TEAM;
+  currentSlide = 0;
 
+  next(): void {
+    this.currentSlide = this.currentSlide + 1;
 
+    if (this.currentSlide === this.equipa.length) {
+      this.currentSlide = 0;
+    }
+
+  }
 
   constructor() { }
 
