@@ -1,7 +1,7 @@
 <div class="container">
   <div class="card-wrapper">
     <ng-container *ngFor="let item of portfolio">
-      <div class="card" #foto [class.hover]="changeVisibilty">
+      <div class="card" #foto (mouseover)="showHiddenDiv()">
         <img [src]="item.sourcePath" alt="">
       </div>
     </ng-container>
@@ -10,7 +10,7 @@
 
     <ng-container *ngFor="let item of portfolio">
 
-      <div class="text" #descricao  *ngIf=" !changeVisibilty">
+      <div class="text" #descricao >
 
         {{ item.nome | uppercase}}
 
