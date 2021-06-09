@@ -3,7 +3,7 @@ import { equipa } from './equipa';
 export const TEAM: equipa[] = [
 
         {
-            id:0,
+            id: 0,
             nome: "Nuno Bastos",
             cargo: "Big Boss",
             imgPath: "../../assets/equipa/hombre.png",

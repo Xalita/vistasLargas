@@ -1,17 +1,26 @@
 <div class="container">
-  <ng-container *ngFor="let item of portfolio">
-    <div class="card" #foto >
-      <img [src]="item.sourcePath" alt="">
-    </div>
-  </ng-container>
-  <ng-container *ngFor="let item of portfolio">
+  <div class="card-wrapper">
+    <ng-container *ngFor="let item of portfolio">
+      <div class="card" #foto [class.hover]="changeVisibilty">
+        <img [src]="item.sourcePath" alt="">
+      </div>
+    </ng-container>
+  </div>
+  <div class="text-wrapper">
 
-    <div class="text" #descricao  *ngIf=" !changeVisibilty">
+    <ng-container *ngFor="let item of portfolio">
 
-      {{ item.nome | uppercase}}
+      <div class="text" #descricao  *ngIf=" !changeVisibilty">
 
-    </div>
-  </ng-container>
+        {{ item.nome | uppercase}}
+
+        <div>
+          orçamneto para mais infos
+        </div>
+
+      </div>
+    </ng-container>
+  </div>
 </div>
 
 
