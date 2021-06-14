@@ -17,9 +17,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
-    FacebookModule.forRoot(),
-    // BrowserAnimationsModule
+    SharedModule
     ],
   providers: [],
   bootstrap: [AppComponent]

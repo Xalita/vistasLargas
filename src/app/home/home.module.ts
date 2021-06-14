@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { IndexCompComponent } from './index-comp/index-comp.component';
 import { ParceirosComponent } from './index-comp/parceiros/parceiros.component';
-import { NovaEquipaComponent } from './index-comp/nova-equipa/nova-equipa.component';
+import { CarouselComponent } from './index-comp/nova-equipa/nova-equipa.component';
+import { ItemDirective } from './index-comp/equipa/directives/item.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NovaEquipaComponent } from './index-comp/nova-equipa/nova-equipa.compon
     FormComponent,
     EquipaComponent,
     ParceirosComponent,
-    NovaEquipaComponent],
+    CarouselComponent,
+    ItemDirective],
   imports: [
     CommonModule,
     HomeRoutingModule,

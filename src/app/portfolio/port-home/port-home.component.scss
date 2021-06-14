@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     height: 400px;
-    background-color: rgba($color: #3ae748, $alpha: .5);
+    background-color: rgba($color: #b7ceb9, $alpha: .5);
 
 
   }
@@ -58,7 +58,37 @@
 
 }
 
-
 .hover{
   z-index: -3;
+}
+
+.nav {
+  margin: 60px 0 60px 0;
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      margin: 20px;
+      padding:5px;
+
+
+      a {
+        color: black;
+        text-decoration: none;
+        padding:5px;
+
+        &:hover {
+          border-bottom: 5px solid rgba($color: #1B4CA1, $alpha: 1);
+          color: black;
+
+        }
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 3px solid rgba($color: #1B4CA1, $alpha: 1);
+  color: black;
 }

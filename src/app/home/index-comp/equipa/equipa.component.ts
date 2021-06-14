@@ -16,6 +16,12 @@ export class EquipaComponent implements OnInit {
 
   slides = [[]];
   currentSlideBoll = false;
+  hoverOn= false;
+
+  onHover(){
+    this.hoverOn = !this.hoverOn;
+  }
+
 
   showCards(arr: any, size: number): any {
     const len = arr.length;
@@ -27,23 +33,12 @@ export class EquipaComponent implements OnInit {
     return this.slides;
   }
 
-  getWidth(): void {
+  getWidth(): any {
     this.itemWidth = window.innerWidth;
+    return this.itemWidth;
   }
 
-  setClass(): any{
-    return `
-    .card {
-      flex: 0 1 ${this.itemWidth}px;
-      height: 40%;
-      display: flex;
-      flex-flow: column wrap;
-      margin: 40px;
-      justify-content: center;
-      align-items: center;
-    }
-    `;
-  }
+
 
   next(): void {
     this.currentSlide +=  1;
@@ -53,7 +48,15 @@ export class EquipaComponent implements OnInit {
     }
   }
 
-
+// setClass(): any  {
+//   if (this.getWidth() < 1024) {
+//     return `carousel768`;
+//   } else if (this.getWidth() < 768) {
+//     return `carousel320`;
+//   } else  if (this.getWidth() < 1500) {
+//     return `carousel1024`;
+//   }
+// }
 
   constructor() {
 
@@ -61,7 +64,8 @@ export class EquipaComponent implements OnInit {
 
   ngOnInit(): void {
     this.getWidth();
-
+    // setInterval(() => {this.getWidth()}, 1000);
+    // console.log(this.getWidth());
     this.slides = this.showCards(this.slides, 3);
 
     console.log (this.slides);
