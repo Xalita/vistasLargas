@@ -7,14 +7,16 @@
 
 .contactos-wrapper {
   width: 80%;
-  height: 100vh;
+  height: 500px;
   margin-left: 60px;
   margin-bottom: 30px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
 
-
+  @media (max-width:375px) {
+    margin-left: 15px;
+  }
 
   .wrapper {
       display: flex;
