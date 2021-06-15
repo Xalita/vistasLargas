@@ -1,6 +1,6 @@
-<div class="nav">
-  <ul (click)="checkActive()">
-    <li [class.active]="isActive"><a>Vinil</a></li>
+<!-- <div class="nav">
+  <ul>
+    <li><a>Vinil</a></li>
     <li>/</li>
     <li>
       <a>
@@ -14,9 +14,9 @@
       </a>
     </li>
   </ul>
-</div>
+</div> -->
 
-<div class="container">
+<!-- <div class="container">
   <div class="card-wrapper">
     <ng-container *ngFor="let item of portfolio">
       <div class="card" #foto>
@@ -25,21 +25,25 @@
     </ng-container>
   </div>
   <div class="text-wrapper">
-
-    <!-- <ng-container *ngFor="let item of portfolio">
-
-      <div class="text" #descricao >
-
-        {{ item.nome | uppercase}}
-
-        <div>
-          orçamneto para mais infos
+      <ng-container *ngFor="let item of portfolio">
+        <div class="text" #descricao >
+          {{ item.nome | uppercase}}
         </div>
+      </ng-container>
+    </div>
+</div> -->
 
-      </div>
-    </ng-container> -->
+
+
+<div class="container">
+  <ng-container *ngFor="let item of portfolio">
+    <div class="card">
+    <img [src]="item.sourcePath" alt="Avatar" class="image">
+      <div class="overlay">
+      <div class="text"> {{ item.nome }}</div>
+    </div>
   </div>
+  </ng-container>
 </div>
-
 
 <app-footer></app-footer>
