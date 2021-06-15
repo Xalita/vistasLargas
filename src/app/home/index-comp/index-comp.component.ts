@@ -1,4 +1,3 @@
-import { equipa } from './nova-equipa/mock/db_novo';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index-comp.component.scss']
 })
 export class IndexCompComponent implements OnInit {
-
-  teams = equipa;
 
 
 

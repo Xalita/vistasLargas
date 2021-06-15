@@ -1,18 +1,19 @@
-.carrousel {
-    width: 250px;
-    margin-top: 50px;
-    padding: 20px;
-    overflow: hidden;
+// .carrousel {
+//     width: 250px;
+//     margin-top: 50px;
+//     padding: 20px;
+//     overflow: hidden;
 
     .container {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
-      width: 6000px;
+      justify-content: center;
+      width: 100%;
       overflow: hidden;
 
       .card {
-          flex: 0 1 200px;
+          flex: 0 1 300px;
           height: 40%;
           display: flex;
           flex-flow: column wrap;
@@ -22,11 +23,11 @@
           // background-color: rgb(211, 44, 44);
 
           @media (max-width:768px) {
-              flex: 0 1 200px;
+              flex: 0 1 300px;
               margin: 0 20px 0 20px;
           }
           @media (max-width:320px) {
-            flex: 0 1 100px;
+            flex: 0 1 300px;
             margin: 0 20px 0 20px;
         }
 
@@ -68,7 +69,7 @@
                       font-size:2rem;
 
                       @media (max-width:768px) {
-                          font-size: 3rem;
+                          font-size: 2rem;
                       }
 
                       @media (max-width:350px) {
@@ -93,7 +94,7 @@
                       margin: 0;
 
                       @media (max-width:768px) {
-                          font-size: 2rem;
+                          font-size: 1.5rem;
                       }
 
                       @media (max-width:768px) {
@@ -112,10 +113,10 @@
                   font-size: 1.5rem;
 
                   @media (max-width:350px) {
-                      font-size: 1rem;
+                      font-size: .7rem;
                   }
                   @media (max-width:768px) {
-                      font-size: 2rem;
+                      font-size: 1.5rem;
                   }
 
                   .font {
@@ -124,11 +125,11 @@
                       color: #1B4CA1;
 
                       @media (max-width:768px) {
-                          font-size: 4rem;
+                          font-size: 2.5rem;
                       }
 
                       @media (max-width:350px) {
-                          font-size: 3rem;
+                          font-size: 2rem;
                       }
 
 
@@ -138,5 +139,5 @@
       }
     }
 
-}
+
 
