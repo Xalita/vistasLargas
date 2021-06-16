@@ -1,0 +1,10 @@
+<div class="container">
+  <ng-container *ngFor="let item of portfolio">
+    <div class="card">
+    <img [src]="item.sourcePath" [alt]="item.nome" class="image">
+      <div class="overlay">
+      <div class="text"> {{ item.nome }}</div>
+    </div>
+  </div>
+  </ng-container>
+</div>

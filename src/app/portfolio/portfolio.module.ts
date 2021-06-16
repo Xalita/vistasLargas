@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortHomeComponent } from './port-home/port-home.component';
+import { GridImagesComponent } from './grid-images/grid-images.component';
 
 
 @NgModule({
   declarations: [
-    PortHomeComponent
+    PortHomeComponent,
+    GridImagesComponent
     ],
   imports: [
     CommonModule,
