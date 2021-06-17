@@ -1,0 +1,12 @@
+:host{
+  width: 20000px;
+  height: 200px;
+  display: flex;
+  flex-flow:row ;
+  overflow: hidden;
+
+  .slide {
+  flex: 0 1 300px;
+  background-color: brown;
+  }
+}

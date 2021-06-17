@@ -16,6 +16,13 @@ export class PortHomeComponent implements OnInit {
 
   changeVisibilty = false;
 
+  isActive = false;
+
+checkActive(): any {
+  this.isActive = !this.isActive;
+
+  console.log (this.isActive);
+}
 
   // mouseIn(): any {
   //   for (let i of this.portfolio) {
