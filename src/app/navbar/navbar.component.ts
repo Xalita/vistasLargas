@@ -1,4 +1,3 @@
-import { ThrowStmt } from '@angular/compiler';
 import { Component, ElementRef, HostListener, OnInit, ViewChild, Renderer2 } from '@angular/core';
 
 @Component({
