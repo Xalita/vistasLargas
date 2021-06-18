@@ -1,0 +1,17 @@
+<section id="servicos" class="container">
+  <div class="card-wrapper">
+    <ng-container *ngFor="let item of categorias">
+    <div class="card">
+      <div class="circle">
+        <img [src]="item.imgPath" [alt]="item.nome" />
+      </div>
+      <div class="text">
+        <h4>{{ item.nome }}</h4>
+        <p>{{ item.isTrue }}</p>
+      </div>
+      <div class="more"><a href="">+ Info</a></div>
+    </div>
+  </ng-container>
+  </div>
+
+</section>
