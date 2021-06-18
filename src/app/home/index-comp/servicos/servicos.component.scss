@@ -5,10 +5,10 @@
 
   .card-wrapper {
     display: flex;
-    flex-flow: row ;
+    flex-flow: row wrap ;
+    justify-content: center;
+    width: 100%;
 
-    width: 300px;
-    overflow: hidden;
 
 
     .card {
@@ -21,7 +21,7 @@
       .circle {
         width: 250px;
         height: 250px;
-        background-color: whitesmoke;
+        background-color: rgba($color: #1a78e4, $alpha: 1.0);
         display:flex;
         justify-content: center;
         align-content: center;
@@ -40,6 +40,26 @@
           flex-flow: column;
           justify-content: center;
           // align-content: center;
+          }
+          .more {
+            width: 30%;
+            background-color: #1a78e4;
+            border-radius: 5%;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+
+            a{
+              text-decoration: none;
+              color: #fff;
+            }
+
+            &:hover{
+              background-color: #fff;
+            }
+            &:hover a{
+              color: black;
+            }
         }
     }
   }
