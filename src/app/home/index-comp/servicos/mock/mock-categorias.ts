@@ -4,34 +4,44 @@ export const cat:CATEGORIAS[] = [
     {
         id: 0,
         nome:"Acrílico",
-        isTrue: false,
-        imgPath:"../../../../../assets/Icons/acrilico protecao.jpg"
+        isHovered: false,
+        imgPath:"../../../../../assets/Icons/acrilico.svg",
+        imgPath2: "../../../../../assets/Icons/acrilicoWhite.svg",
+        desc: "lorem*5"
     },
     {
         id: 1,
         nome:"Carro",
-        isTrue: false,
-        imgPath:"../../../../../assets/Icons/car.png"
+        isHovered: false,
+        imgPath:"../../../../../assets/Icons/car [Recovered].svg",
+        imgPath2: "../../../../../assets/Icons/carWhite.svg",
+        desc: "lorem*5"
 
     },
     {
         id: 2,
         nome:"Corte e Gravação Laser",
-        isTrue: false,
-        imgPath:"../../../../../assets/Icons/laser-cutting-machine.png"
+        isHovered: false,
+        imgPath:"../../../../../assets/Icons/laser-cutting-machine.svg",
+        imgPath2: "../../../../../assets/Icons/laserWhite.svg",
+        desc: "lorem*5"
 
     },
     {
         id: 3,
         nome: "Impressão Digital",
-        isTrue: false,
-        imgPath:"../../../../../assets/Icons/printer.png"
+        isHovered: false,
+        imgPath:"../../../../../assets/Icons/printer.svg",
+        imgPath2: "../../../../../assets/Icons/printerWhite.svg",
+        desc: "lorem*5"
     },
     {
         id: 4,
         nome: 'Estampagem em T-Shirts',
-        isTrue: false,
-        imgPath:"../../../../../assets/Icons/merchandise.png"
+        isHovered: false,
+        imgPath:"../../../../../assets/Icons/merchandise.svg",
+        imgPath2: "../../../../../assets/Icons/merchandiseWhite.svg",
+        desc: "lorem*5"
     }
 
 ]

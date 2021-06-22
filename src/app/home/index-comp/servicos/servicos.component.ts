@@ -13,6 +13,12 @@ export class ServicosComponent implements OnInit {
   serv = servicos;
 
   categorias = cat;
+    isHover = false;
+
+  checkHover(): any {
+    this.isHover = !this.isHover;
+  }
+
 
   constructor() { }
 

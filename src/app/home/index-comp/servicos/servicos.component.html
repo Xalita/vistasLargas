@@ -1,13 +1,19 @@
 <section id="servicos" class="container">
   <div class="card-wrapper">
     <ng-container *ngFor="let item of categorias">
-    <div class="card">
-      <div class="circle">
-        <img [src]="item.imgPath" [alt]="item.nome" />
+    <div class="card" >
+      <div class="circle" >
+        <img [src]="isHover ? item.imgPath2 : item.imgPath"
+        (mouseover)="checkHover()" (mouseleave)="checkHover()"
+        [alt]="item.nome" />
       </div>
       <div class="text">
-        <h4>#{{ item.nome }}</h4>
-        <p>{{ item.isTrue }}</p>
+        <h4>
+          {{ item.nome }}
+        </h4>
+        <p>
+          {{ item.desc }}
+        </p>
       </div>
       <span class="more">
         <a href="">+ Info</a>

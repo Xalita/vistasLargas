@@ -50,7 +50,6 @@ onHover(): void {
 
 logoSrc(): any {
   const windowScroll = window.pageYOffset;
-
   if (windowScroll > 0) {
     return `../../assets/img/logo_White.svg`;
   } else if (windowScroll === 0) {
