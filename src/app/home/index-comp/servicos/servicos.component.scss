@@ -3,6 +3,7 @@
   width: 100%;
   padding: 150px 0 150px 0;
   background: linear-gradient(-217deg, rgba(#fff, 1), rgba(rgb(209, 191, 191),1),rgba(rgb(230, 226, 226),1));
+  box-shadow: 5px 5px 10px #888888;
 
   .card-wrapper {
     display: flex;
@@ -47,6 +48,17 @@
           flex-flow: column;
           justify-content: center;
           align-items: center;
+
+            ul{
+              margin: 0;
+              padding: 0;
+              li{
+                list-style: none;
+                padding: 5px;
+                margin: 5px 0 5px 0;
+                background-color: rgba($color: #1a78e4, $alpha: .5);
+              }
+            }
           }
 
           .more {

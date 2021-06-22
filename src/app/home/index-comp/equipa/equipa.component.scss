@@ -12,10 +12,16 @@
       justify-content: center;
       width: 100%;
       overflow: hidden;
+      background:
+        linear-gradient(-217deg,
+        rgba(#fff, 1),
+        rgba(rgb(209, 191, 191),1),
+        rgba(rgb(230, 226, 226),1));
+        padding: 150px 0 150px 0;
 
       .card {
 
-          flex: 0 1 200px;
+          flex: 0 1 300px;
           height: 40%;
 
           display: flex;
@@ -122,7 +128,7 @@
                   }
 
                   .font {
-                      font-size: 2rem;
+                      font-size: 1.5rem;
                       font-weight: 900;
                       color: #1B4CA1;
 

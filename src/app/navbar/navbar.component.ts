@@ -23,7 +23,8 @@ export class NavbarComponent implements OnInit {
 
 
   offHandler(event: any): any {
-    if (!this.hamburguerEle.nativeElement.contains(event.target)) { // Verifica posição do cursor
+    if (!this.hamburguerEle.nativeElement.contains(event.target)) {
+      // Verifica posição do cursor
       this.menu2.nativeElement.classList.remove('block');
     }
   }
@@ -55,7 +56,15 @@ logoSrc(): any {
   } else if (windowScroll === 0) {
     return `../../assets/img/logo.svg`;
   }
+}
 
+activeSticky(item: any): any {
+  const windowScroll = window.pageYOffset;
+  if (windowScroll > 0) {
+    item = {
+      'border-bottom': '3px solid #fff'
+    };
+  }
 }
 
   checkIsClicked(): void {

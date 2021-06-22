@@ -2,7 +2,7 @@ import {LISTA} from '../models/servicos';
 
 export const servicos: LISTA[] = [
     {
-        id:0,
+        id: 0,
         nome: 'Vinil',
         desc: 'Vinil é fixe',
         img: '../../assets/work/vinil_1.jpg',

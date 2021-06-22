@@ -19,14 +19,14 @@ export const TEAM: equipa[] = [
           {
             id:2,
             nome: "Joel Pires",
-            cargo: "Designer/ Produção",
+            cargo: "Designer",
             imgPath: "../../assets/equipa/hombre.png",
             description:"O ervilhas fez isto"
           },
           {
             id:3,
             nome: "Paulo Moreira",
-            cargo: "Chefe Produção",
+            cargo: "Produção",
             imgPath: "../../assets/equipa/hombre.png",
             description:"O ervilhas fez isto"
           },

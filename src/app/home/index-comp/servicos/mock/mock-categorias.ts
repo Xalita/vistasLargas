@@ -1,13 +1,16 @@
 import { CATEGORIAS } from '../models/categorias';
 
-export const cat:CATEGORIAS[] = [
+export const cat: CATEGORIAS[] = [
     {
         id: 0,
         nome:"Acrílico",
         isHovered: false,
         imgPath:"../../../../../assets/Icons/acrilico.svg",
         imgPath2: "../../../../../assets/Icons/acrilicoWhite.svg",
-        desc: "lorem*5"
+        desc1: "lorem*5",
+        desc2: 'Corte e gravação em Acrílico',
+        desc3: 'Corte e gravação em MDF',
+        desc4: 'Corte e gravação em Cortiça'
     },
     {
         id: 1,
@@ -15,7 +18,10 @@ export const cat:CATEGORIAS[] = [
         isHovered: false,
         imgPath:"../../../../../assets/Icons/car [Recovered].svg",
         imgPath2: "../../../../../assets/Icons/carWhite.svg",
-        desc: "lorem*5"
+        desc1: "lorem*5",
+        desc2: 'Corte e gravação em Acrílico',
+        desc3: 'Corte e gravação em MDF',
+        desc4: 'Corte e gravação em Cortiça'
 
     },
     {
@@ -24,7 +30,10 @@ export const cat:CATEGORIAS[] = [
         isHovered: false,
         imgPath:"../../../../../assets/Icons/laser-cutting-machine.svg",
         imgPath2: "../../../../../assets/Icons/laserWhite.svg",
-        desc: "lorem*5"
+        desc1: "lorem*5",
+        desc2: 'Corte e gravação em Acrílico',
+        desc3: 'Corte e gravação em MDF',
+        desc4: 'Corte e gravação em Cortiça'
 
     },
     {
@@ -33,7 +42,10 @@ export const cat:CATEGORIAS[] = [
         isHovered: false,
         imgPath:"../../../../../assets/Icons/printer.svg",
         imgPath2: "../../../../../assets/Icons/printerWhite.svg",
-        desc: "lorem*5"
+        desc1: "lorem*5",
+        desc2: 'Corte e gravação em Acrílico',
+        desc3: 'Corte e gravação em MDF',
+        desc4: 'Corte e gravação em Cortiça'
     },
     {
         id: 4,
@@ -41,7 +53,10 @@ export const cat:CATEGORIAS[] = [
         isHovered: false,
         imgPath:"../../../../../assets/Icons/merchandise.svg",
         imgPath2: "../../../../../assets/Icons/merchandiseWhite.svg",
-        desc: "lorem*5"
+        desc1: "lorem*5",
+        desc2: 'Corte e gravação em Acrílico',
+        desc3: 'Corte e gravação em MDF',
+        desc4: 'Corte e gravação em Cortiça'
     }
 
 ]

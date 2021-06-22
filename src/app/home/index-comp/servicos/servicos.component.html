@@ -9,12 +9,17 @@
         <h4>
           {{ item.nome }}
         </h4>
-        <p>
-          {{ item.desc }}
-        </p>
+        <ul>
+          <li>{{ item.desc1 }}</li>
+          <li>{{ item.desc2 }}</li>
+          <li>{{ item.desc3 }}</li>
+          <li>{{ item.desc4 }}</li>
+        </ul>
+
+
       </div>
       <span class="more">
-        <a href="">+ Info</a>
+        <a routerLink="/portfolio">+ Info</a>
       </span>
     </div>
   </ng-container>
