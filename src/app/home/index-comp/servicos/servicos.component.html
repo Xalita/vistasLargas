@@ -3,9 +3,7 @@
     <ng-container *ngFor="let item of categorias">
     <div class="card" >
       <div class="circle" >
-        <img [src]="isHover ? item.imgPath2 : item.imgPath"
-        (mouseover)="checkHover()" (mouseleave)="checkHover()"
-        [alt]="item.nome" />
+        <img [src]="item.imgPath" [alt]="item.nome" />
       </div>
       <div class="text">
         <h4>

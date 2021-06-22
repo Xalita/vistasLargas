@@ -16,7 +16,8 @@ export class ServicosComponent implements OnInit {
     isHover = false;
 
   checkHover(): any {
-    this.isHover = !this.isHover;
+    let hover = this.isHover;
+    hover = !hover;
   }
 
 
