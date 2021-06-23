@@ -1,4 +1,3 @@
-import { ThrowStmt } from '@angular/compiler';
 import { Component, ElementRef, HostListener, OnInit, ViewChild, Renderer2 } from '@angular/core';
 
 @Component({
@@ -24,7 +23,8 @@ export class NavbarComponent implements OnInit {
 
 
   offHandler(event: any): any {
-    if (!this.hamburguerEle.nativeElement.contains(event.target)) { // Verifica posição do cursor
+    if (!this.hamburguerEle.nativeElement.contains(event.target)) {
+      // Verifica posição do cursor
       this.menu2.nativeElement.classList.remove('block');
     }
   }
@@ -51,13 +51,20 @@ onHover(): void {
 
 logoSrc(): any {
   const windowScroll = window.pageYOffset;
-
   if (windowScroll > 0) {
     return `../../assets/img/logo_White.svg`;
   } else if (windowScroll === 0) {
     return `../../assets/img/logo.svg`;
   }
+}
 
+activeSticky(item: any): any {
+  const windowScroll = window.pageYOffset;
+  if (windowScroll > 0) {
+    item = {
+      'border-bottom': '3px solid #fff'
+    };
+  }
 }
 
   checkIsClicked(): void {

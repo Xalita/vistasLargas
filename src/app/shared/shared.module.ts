@@ -5,14 +5,15 @@ import { FooterComponent } from './footer/footer.component';
 import { FacebookComponent } from './facebook/facebook.component';
 import { HoverEffectDirective } from './hover-effect.directive';
 import { LinesDirective } from './lines.directive';
+import { TitleComponent } from './title/title.component';
 
 
 
 @NgModule({
-  declarations: [RodapeComponent, FooterComponent, FacebookComponent, HoverEffectDirective, LinesDirective],
+  declarations: [RodapeComponent, FooterComponent, FacebookComponent, HoverEffectDirective, LinesDirective, TitleComponent],
   imports: [
     CommonModule
   ],
-  exports: [RodapeComponent, FooterComponent, HoverEffectDirective, LinesDirective]
+  exports: [RodapeComponent, FooterComponent, HoverEffectDirective, LinesDirective,TitleComponent]
 })
 export class SharedModule { }
