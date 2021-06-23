@@ -2,7 +2,11 @@
   display: flex;
   width: 100%;
   padding: 150px 0 150px 0;
-  background: linear-gradient(-217deg, rgba(#fff, 1), rgba(rgb(209, 191, 191),1),rgba(rgb(230, 226, 226),1));
+  background:
+    linear-gradient(-217deg,
+    rgba(#fff, 1),
+    rgba(rgb(219, 210, 210),1),
+    rgba(rgb(236, 232, 232),1));
   box-shadow: 5px 5px 10px #888888;
 
   .card-wrapper {

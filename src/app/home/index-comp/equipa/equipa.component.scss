@@ -15,15 +15,14 @@
       background:
         linear-gradient(-217deg,
         rgba(#fff, 1),
-        rgba(rgb(209, 191, 191),1),
-        rgba(rgb(230, 226, 226),1));
+        rgba(rgb(219, 210, 210),1),
+        rgba(rgb(236, 232, 232),1));
         padding: 150px 0 150px 0;
 
       .card {
 
           flex: 0 1 300px;
           height: 40%;
-
           display: flex;
                   flex-flow: column wrap;
           margin: 40px;
@@ -41,9 +40,13 @@
         }
 
           .image-holder {
-            width: 100%;
+            // max-width: 300px;
+            // max-height: 300px;
+            max-width: 100%;
+            border-radius: 100%;
+            height: auto;
             align-self: flex-start;
-            border-radius: 50%;
+            overflow: hidden;
             padding: 20px;
 
 
@@ -52,9 +55,7 @@
 
           img {
             max-width: 100%;
-            border-radius: 100%;
-               object-fit: contain;
-                    box-shadow: 2px 2px 5px grey;
+            object-fit: contain;
           }
 
 
