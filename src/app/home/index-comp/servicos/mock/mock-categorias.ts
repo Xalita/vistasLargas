@@ -14,14 +14,14 @@ export const cat: CATEGORIAS[] = [
     },
     {
         id: 1,
-        nome:"Carro",
+        nome: "Carro",
         isHovered: false,
         imgPath:"../../../../../assets/Icons/car [Recovered].svg",
         imgPath2: "../../../../../assets/Icons/carWhite.svg",
-        desc1: "lorem*5",
-        desc2: 'Corte e gravação em Acrílico',
-        desc3: 'Corte e gravação em MDF',
-        desc4: 'Corte e gravação em Cortiça'
+        desc1: "Decoração de Carros",
+        desc2: '',
+        desc3: '',
+        desc4: ''
 
     },
     {

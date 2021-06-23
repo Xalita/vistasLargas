@@ -3,57 +3,107 @@ import { PORTFOLIO } from './../models/portfolio';
 export const port: PORTFOLIO[] = [
   {
     id: 0,
-    nome: 'vinil',
-    sourcePath: './../assets/Portfolio/benjamin-dada-EDZTb2SQ6j0-unsplash.jpg'
+    nome: 'acrílico',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Acrilico'
   },
    {
      id: 1,
-     nome: 'espelhado',
-     sourcePath: './../../../assets/Portfolio/cody-weiss-hEMYwIE6GEY-unsplash.jpg'
+     nome: 'decoração viaturas',
+     sourcePath: '../../../assets/Portfolio/trabalhos/Gesmo_Carrinha'
    },
    {
      id: 2,
-     nome: 'Laser',
-     sourcePath: './../../../assets/Portfolio/surface-5PBV0QssNfA-unsplash.jpg'
+     nome: 'decoração viaturas',
+     sourcePath: '../../../assets/Portfolio/trabalhos/Gesmo_Carrinha2'
    },
    {
      id: 3,
-     nome: 'Decoração viaturas',
-     sourcePath: './../../../assets/Portfolio/surface-9iDizfMiiaA-unsplash.jpg'
+     nome: 'vinil',
+     sourcePath: '../../../assets/Portfolio/trabalhos/Pereira_Super'
    },
    {
     id: 4,
-    nome: 'Decoração viaturas',
-    sourcePath: './../../../assets/Portfolio/IMG_1968.jpg'
+    nome: 'vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Pereira_Super2'
   },
   {
     id: 5,
-    nome: 'Decoração viaturas',
+    nome: 'acrílico',
     sourcePath: './../../../assets/Portfolio/IMG_2182.jpg'
   },
   {
     id: 6,
-    nome: 'Decoração viaturas',
+    nome: 'acrílico / vinil',
     sourcePath: './../../../assets/Portfolio/IMG_2186.jpg'
   },
   {
     id: 7,
-    nome: 'Decoração viaturas',
+    nome: 'decoração viaturas',
     sourcePath: './../../../assets/Portfolio/IMG_3064.jpg'
   },
   {
     id: 8,
-    nome: 'Decoração viaturas',
-    sourcePath: './../../../assets/Portfolio/surface-5PBV0QssNfA-unsplash.jpg'
+    nome: 'vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Pereira_Super3'
   },
   {
     id: 9,
-    nome: 'Decoração viaturas',
-    sourcePath: './../../../assets/Portfolio/surface-9iDizfMiiaA-unsplash.jpg'
+    nome: 'vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Pereira_Super5'
   },
   {
     id: 10,
-    nome: 'Decoração viaturas',
-    sourcePath: './../../../assets/Portfolio/surface-VuXjER0DkV8-unsplash.jpg'
+    nome: 'vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Pereira_Super6'
+  },
+  {
+    id: 11,
+    nome: 'vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Pereira_Super7'
+  },
+  {
+    id: 12,
+    nome: 'vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Pereira_Super8'
+  },
+  {
+    id: 13,
+    nome: 'decoração viaturas',
+    sourcePath: '../../../assets/Portfolio/trabalhos/PGL Carro.jpeg'
+  },
+  {
+    id: 14,
+    nome: 'decoração viaturas',
+    sourcePath: '../../../assets/Portfolio/trabalhos/PGL Carro2'
+  },
+  {
+    id: 15,
+    nome: 'decoração viaturas',
+    sourcePath: '../../../assets/Portfolio/trabalhos/PGL Carro3'
+  },
+  {
+    id: 16,
+    nome: 'decoração viaturas',
+    sourcePath: '../../../assets/Portfolio/trabalhos/PGL Carro4'
+  },
+  {
+    id: 17,
+    nome: 'estampagem',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Tralhao_Sacos'
+  },
+  {
+    id: 18,
+    nome: 'gravação',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Tralhão_agendas.jpeg'
+  },
+  {
+    id: 19,
+    nome: 'decoração viaturas',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Carro_bioEscolha'
+  },
+  {
+    id: 20,
+    nome: 'decoração viaturas',
+    sourcePath: '../../../assets/Portfolio/trabalhos/Carro_bioEscolha2'
   }
 ];
