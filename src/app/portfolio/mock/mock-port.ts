@@ -105,5 +105,110 @@ export const port: PORTFOLIO[] = [
     id: 20,
     nome: 'decoração viaturas',
     sourcePath: '../../../assets/Portfolio/trabalhos/Carro_bioEscolha2'
+  },
+  {
+    id: 21,
+    nome: 'Vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/elDivino.jpeg'
+  },
+  {
+    id: 22,
+    nome: 'Vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/elDivino3.jpeg'
+  },
+  {
+    id: 23,
+    nome: 'Vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/elDivino4.jpeg'
+  },
+  {
+    id: 24,
+    nome: 'Vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/elDivino5.jpeg'
+  },
+  {
+    id: 25,
+    nome: 'Vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/elDivino6.jpeg'
+  },
+  {
+    id: 26,
+    nome: 'Vinil',
+    sourcePath: '../../../assets/Portfolio/trabalhos/elDivino7.jpeg'
+  },
+  {
+    id: 27,
+    nome: 'Exposição',
+    sourcePath: '../../../assets/Portfolio/trabalhos/exposiçaoOCC.jpeg'
+  },
+  {
+    id: 28,
+    nome: 'Exposição',
+    sourcePath: '../../../assets/Portfolio/trabalhos/exposiçaoOCC2.jpeg'
+  },
+  {
+    id: 29,
+    nome: 'Exposição',
+    sourcePath: '../../../assets/Portfolio/trabalhos/exposiçaoOCC3.jpeg'
+  },
+  {
+    id: 30,
+    nome: 'Corte Acrílico',
+    sourcePath: '../../../assets/Portfolio/trabalhos/isosombra.jpeg'
+  },
+  {
+    id: 31,
+    nome: 'Decoração Montra',
+    sourcePath: '../../../assets/Portfolio/trabalhos/isosombra2.jpeg'
+  },
+  {
+    id: 32,
+    nome: 'Decoração Montra',
+    sourcePath: '../../../assets/Portfolio/trabalhos/isosombra3.jpeg'
+  },
+  {
+    id: 33,
+    nome: 'Decoração Montra',
+    sourcePath: '../../../assets/Portfolio/trabalhos/isosombra4.jpeg'
+  },
+  {
+    id: 34,
+    nome: 'Decoração Montra',
+    sourcePath: '../../../assets/Portfolio/trabalhos/isosombra5.jpeg'
+  },
+  {
+    id: 35,
+    nome: 'Lona',
+    sourcePath: '../../../assets/Portfolio/trabalhos/lona.jpeg'
+  },
+  {
+    id: 36,
+    nome: 'Lona',
+    sourcePath: '../../../assets/Portfolio/trabalhos/lona2.jpeg'
+  },
+  {
+    id: 37,
+    nome: 'Decoração Montra',
+    sourcePath: '../../../assets/Portfolio/trabalhos/ortopediaCelas.jpeg'
+  },
+  {
+    id: 38,
+    nome: 'Sinalética',
+    sourcePath: '../../../assets/Portfolio/trabalhos/sinaletica.jpeg'
+  },
+  {
+    id: 39,
+    nome: 'Sinalética',
+    sourcePath: '../../../assets/Portfolio/trabalhos/sinaletica2.jpeg'
+  },
+  {
+    id: 40,
+    nome: 'Sinalética',
+    sourcePath: '../../../assets/Portfolio/trabalhos/sinaletica3.jpeg'
+  },
+  {
+    id: 41,
+    nome: 'Roll Up',
+    sourcePath: '../../../assets/Portfolio/trabalhos/rollup.jpeg'
   }
 ];
