@@ -4,16 +4,21 @@ export const SLIDE: IMAGES[] = [
     {
         id: 0,
         alt: 'Cidade',
-        url: '../../../../assets/img/piotr-chrobot-6oUsyeYXgTg-unsplash.jpg'
+        url: '../../../../assets/Portfolio/trabalhos/elDivino7.jpeg'
     },
     {
         id: 1,
         alt: 'Cidade 2' ,
-        url: '../../../../assets/img/andrea-cau-nV7GJmSq3zc-unsplash.jpg'
+        url: '../../../../assets/Portfolio/trabalhos/isosombra5.jpeg'
     },
     {
         id: 2,
         alt: 'Cidade 2' ,
-        url: '../../../../assets/img/praia-da-carvalho-benagil-west-algarve-portugal-conde-nast-traveller-13april17-Luca-Da-Ros_SIME_4Corners.jpg'
+        url: '../../../../assets/Portfolio/trabalhos/Acrilico'
+    },
+    {
+        id: 3,
+        alt: 'Cidade 2' ,
+        url: '../../../../assets/Portfolio/trabalhos/PGL Carro3'
     }
 ];
