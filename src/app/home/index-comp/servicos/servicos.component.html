@@ -1,9 +1,9 @@
 <section id="servicos" class="container">
   <div class="card-wrapper">
-    <ng-container *ngFor="let item of categorias">
+    <ng-container *ngFor="let item of categorias; let i = index">
     <div class="card" >
-      <div class="circle" >
-        <img [src]="item.imgPath" [alt]="item.nome" />
+      <div class="circle" (mouseenter)="checkHover(item)" (mouseleave)="checkHover(item)">
+        <img [src]="changePhoto(item)"  [alt]="item.nome" />
       </div>
       <div class="text">
         <h4>

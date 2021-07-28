@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -74,8 +75,15 @@ activeSticky(item: any): any {
 
 
 
+  scrollToContactTypes(): void {
+      this.router.onSameUrlNavigation = 'reload';
+      this.router.navigate([''], { fragment: 'equipa' }).finally(() => {
+          this.router.onSameUrlNavigation = 'ignore'; // Restore config after navigation completes
+      });
+  }
 
-  constructor(private render: Renderer2) {
+
+  constructor(private render: Renderer2, private router: Router) {
     document.addEventListener('click', this.offHandler.bind(this));
    }
 

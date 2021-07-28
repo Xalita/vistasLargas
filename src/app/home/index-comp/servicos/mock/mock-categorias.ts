@@ -49,7 +49,7 @@ export const cat: CATEGORIAS[] = [
     },
     {
         id: 4,
-        nome: 'Estampagem em T-Shirts',
+        nome: 'Brindes Publicitários',
         isHovered: false,
         imgPath:"../../../../../assets/Icons/merchandise.svg",
         imgPath2: "../../../../../assets/Icons/merchandiseWhite.svg",

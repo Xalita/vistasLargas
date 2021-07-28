@@ -14,11 +14,11 @@ export const SLIDE: IMAGES[] = [
     {
         id: 2,
         alt: 'Cidade 2' ,
-        url: '../../../../assets/Portfolio/trabalhos/Acrilico'
+        url: '../../../../assets/Portfolio/trabalhos/Acrilico.jpeg'
     },
     {
         id: 3,
         alt: 'Cidade 2' ,
-        url: '../../../../assets/Portfolio/trabalhos/PGL Carro3'
+        url: '../../../../assets/Portfolio/trabalhos/PGL Carro3.jpeg'
     }
 ];
