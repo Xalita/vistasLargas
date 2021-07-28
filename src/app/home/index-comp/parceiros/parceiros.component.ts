@@ -10,10 +10,9 @@ import { state,trigger, animate, transition, style } from '@angular/animations';
 })
 export class ParceirosComponent implements OnInit {
 
-  @Input() data: any = [];
 
-  next = true;
-  nada = false;
+
+
   constructor() { }
 
   ngOnInit(): void {
