@@ -1,7 +1,8 @@
 .container {
     width: 100%;
     height: 200px;
-    background-color: #1B4CA1;
+    // background-color: #1B4CA1;
+    background-color: #fff;
 
     display: flex;
     flex-flow: row;
@@ -36,6 +37,7 @@
               }
 
               img {
+                filter: invert(.7);
                 width: 100%;
                 height: 50px;
                 object-fit: contain;
