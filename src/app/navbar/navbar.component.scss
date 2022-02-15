@@ -16,41 +16,59 @@
             justify-content:flex-start;
         }
 
-            .logo {
-                width: 10%;
-                display: flex;
-                align-items: center;
-                margin-left: 50px;
 
-
-                @media (max-width:768px) {
-                    width: 20%;
-                    display: flex;
+          .logo {
+            width: 10%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
                     align-items: center;
+            margin-left: 50px;
+
+
+              @media (max-width:768px) {
+                  width: 20%;
+                  display: flex;
+                  align-items: center;
+                  z-index: 50;
+
+              }
+
+
+                  @media (max-width:375px) {
+                    width: 40%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    margin-left: 50px;
+                    position: absolute;
                     z-index: 50;
+                    a {
+                      width: 100%;
 
-                }
-
-
-                    @media (max-width:375px) {
-                        width: 40%;
-                        display: flex;
-                        align-items: center;
-                        margin-left: 50px;
-                        position: absolute;
-                        z-index: 50;
-
-                            img {
-                                width: 100%;
-                                object-fit: cover;
-                            }
+                      img {
+                        width: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                      }
                     }
-
-                img {
+                  }
+                  a {
                     width: 100%;
-                    object-fit: cover;
-                }
-            }
+                    img {
+                        width: 100%;
+                        height: auto;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
+                  }
+          }
+
 
         ul {
             display: flex;

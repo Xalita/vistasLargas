@@ -10,6 +10,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { IndexCompComponent } from './index-comp/index-comp.component';
 import { ParceirosComponent } from './index-comp/parceiros/parceiros.component';
 import { ServicosComponent } from './index-comp/servicos/servicos.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { ServicosComponent } from './index-comp/servicos/servicos.component';
     FormComponent,
     EquipaComponent,
     ParceirosComponent,
-    ServicosComponent
+    ServicosComponent,
     ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
 })
 export class HomeModule { }
