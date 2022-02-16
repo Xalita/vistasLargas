@@ -35,11 +35,9 @@ export class MailingService {
 
   // }
 
-url: string = 'http://localhost:3000/send';
+url = 'http://localhost:3000/send';
 
-  sendMessage(body:any) {
-
-
+  sendMessage (body: any) {
     return this.http.post(this.url,
       JSON.stringify(body),
       {headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
