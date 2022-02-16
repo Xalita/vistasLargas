@@ -25,7 +25,7 @@ export class ServicosComponent implements OnInit {
 
     for (let i = 0; i < this.categorias.length; i++) {
       this.categorias[i].isHovered = true;
-      console.log(this.categorias[i].isHovered);
+      // console.log(this.categorias[i].isHovered);
     }
 
   }
@@ -33,9 +33,9 @@ export class ServicosComponent implements OnInit {
   changePhoto(obj: any): any {
 
       const hover = obj.isHovered;
-      console.log (obj);
+      // console.log (obj);
       if (!hover) {
-        console.log (obj.imgPath);
+        // console.log (obj.imgPath);
         return obj.imgPath;
       } else if (hover)  {
         return obj.imgPath2;
@@ -50,7 +50,7 @@ export class ServicosComponent implements OnInit {
     //   console.log (i);
     // }
     item.isHovered = !item.isHovered;
-    console.log (item);
+    // console.log (item);
   }
 
 

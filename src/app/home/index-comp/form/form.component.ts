@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm, Validators} from '@angular/forms';
-import { MailingService } from './mailing.service';
+import { FormBuilder, FormGroup, NgForm, Validators, FormControl} from '@angular/forms';
 
 
 
@@ -15,6 +14,9 @@ export class FormComponent implements OnInit {
 
   nodemail!: FormGroup;
 
+  name = new FormControl('');
+  tel = new FormControl ('');
+  mail = new FormControl ('');
 
   constructor() { }
 
@@ -23,9 +25,13 @@ export class FormComponent implements OnInit {
 
   }
 
+    sendMail() {
+      console.log (this.name);
+      console.log (this.tel);
+    }
 
   }
 
 
 
-}
+
