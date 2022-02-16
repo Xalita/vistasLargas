@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, NgForm, Validators} from '@angular/forms';
+import { MailingService } from './mailing.service';
+
+
 
 @Component({
   selector: 'app-form',
@@ -7,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  // budget!: FormGroup;
+
+  nodemail!: FormGroup;
+
+
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
+
+
+  }
+
+
 
 }
